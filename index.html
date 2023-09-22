@@ -32,12 +32,12 @@
 </head>
 
 <body>
-    <p class="heading">Celerant Seo Tool</p>
+    <p class="heading">ĐÁNH GIÁ BÀI VIẾT</p>
     <div class="container">
         <div class="row">
             <div class="leftside col-lg-6 col-md-12 col-sm-12 col-12">
                 <form name="seoform" action="/toolset/seodata.cfm" method="post" class="seoForm">
-                    <label for="titletag">Meta Title</label>
+                    <label for="titletag">Tiêu đề</label>
                     <div class="float-end">(<span id='title-length'>0</span>/0-60)</div>
                     <input type="hidden" id="meta-title" name="titletag" value="">
                     <br>
@@ -47,7 +47,7 @@
                     <div id="title-seo-bar-container"><span id="title-seo-bar"
                             style="width: 0%; background-color: none"></span></div>
                     <br>
-                    <label for="metadescription">Meta Description</label>
+                    <label for="metadescription">Mô tả ngắn</label>
                     <div class="float-end">(<span id='desc-length'>0</span>/0-156)</div>
 
                     <input id="meta-description" type='hidden' name="metadescription" cols="100" rows="3" />
@@ -60,8 +60,7 @@
                     </div>
                     <br>
 
-                    <label for="metakeywords"> Meta Keywords <small>( Atleast 5 keywords are
-                            required)</small></label>
+                    <label for="metakeywords"> Từ khóa <small>( Yêu cầu ít nhất 5 từ khóa)</small></label>
                     <div class="float-end">(<span id='keywords-length'>0</span>/5)</div>
 
                     <input type="hidden" id="metakeywords" name="metakeywords" value="">
@@ -72,8 +71,8 @@
                     <div id="keywords-seo-bar-container"><span id="keywords-seo-bar"
                             style="width: 0%; background-color: none"></span></div>
                     <br>
-                    <label for="Focuswords">Focus Word <small>(Only a word or a phrase here)</small></label>
-                    <div class="float-end">(<span id='focus-length'>0</span> Matches /5)</div>
+                    <label for="Focuswords">Từ nổi bật <small>(Gồm 1 từ hoặc 1 câu)</small></label>
+                    <div class="float-end">(<span id='focus-length'>0</span>/5)</div>
 
                     <input type="text" id="focus-key-word" name="focus-key-word" onkeyup="focusKeywordLengthCheck()"
                         value="">
@@ -82,7 +81,7 @@
 
                     <br>
                     <div id="enableDisableCategorySeo">
-                        <label for="seocategory">SEO Page Heading</label>
+                        <label for="seocategory">Tiêu đề trang SEO</label>
                         <div class="float-end">(<span id='heading-length'>0</span>)</div>
 
                         <input type="hidden" id="seo-heading" name="seo-heading" value="">
@@ -93,7 +92,7 @@
                         <div id="heading-seo-bar-container"><span id="heading-seo-bar"
                                 style="width: 0%; background-color: none"></span></div>
                         <br>
-                        <label for="metadescription">SEO Page Text</label>
+                        <label for="metadescription">Nội dung bài viết</label>
                         <div class="float-end">(<span id='text-length'>0</span>/0-&infin;
                             )</div>
 
@@ -112,7 +111,7 @@
                     </div>
                     <br>
                     <br>
-                    <button type="button" class="btn btn-secondary w-100">Save</button>
+                    <button type="button" class="btn btn-secondary w-100">Lưu</button>
                     <br>
 
 
@@ -129,69 +128,68 @@
                     <div id="slidervalue">-</div>
                 </div>
                 <div class="grade">
-                    <b>SEO Grade</b>
+                    <b>Điểm đánh giá SEO</b>
                     <div class="d-flex">
                         <span id='seo-grade-report'></span>
                         <span>performance<em id="seo-score-report"></em></span>
                     </div>
                 </div>
                 <div class="row seo-report">
-                    <p id="title-report"><i class="fa fa-times"></i> <strong> SEO Title</strong> length is
-                        <strong>0</strong> characters. It
-                        Must be between <strong>30 to
-                            60</strong>.
+                    <p id="title-report"><i class="fa fa-times"></i> <strong> Tiêu đề SEO</strong> gồm 
+                        <strong>0</strong> ký tự. nó phải nằm trong khoảng từ 
+                        <strong>30 tới
+                            60</strong> ký tự.
                     </p>
 
-                    <p id="desc-report"><i class="fa fa-times"></i> <strong> SEO Description</strong> length is
-                        <strong>0</strong> characters. It
-                        Must be between <strong>100 to
-                            156</strong>.
+                    <p id="desc-report"><i class="fa fa-times"></i> <strong> Đoạn mô tả </strong> là 
+                        <strong>0</strong> ký tự. nó phải nằm trong khoảng từ
+                        <strong>100 đến
+                            156</strong> ký tự.
                     </p>
 
-                    <p id="keywords-report"><i class="fa fa-times"></i> <strong> Meta Keywords</strong> are
-                        <strong>0</strong> Keywords. There
-                        Must be <strong>5</strong> Keywords.
+                    <p id="keywords-report"><i class="fa fa-times"></i> <strong> Số lượng từ khóa</strong> là 
+                        <strong>0</strong> từ khóa. Phải có ít nhất 
+                        <strong>5</strong> từ khóa.
                     </p>
 
-                    <p id="focus-keyword-report"><i class="fa fa-times"></i> <strong> Focus Keyword</strong> is
-                        <strong>Missing</strong>. There
-                        Must be <strong>1</strong> Focus Keyword.
+                    <p id="focus-keyword-report"><i class="fa fa-times"></i> <strong> Từ nổi bật</strong> bị
+                        <strong>thiếu</strong>. Phải có
+                        <strong>1</strong> từ nổi bật.
                     </p>
 
-                    <p id="heading-report"><i class="fa fa-times"></i> <strong> Page Heading</strong> length
-                        is
-                        <strong>0</strong> characters.
+                    <p id="heading-report"><i class="fa fa-times"></i> <strong> Độ dài</strong> tiêu đề trang là
+                        <strong>0</strong> ký tự.
                     </p>
 
-                    <p id="text-report"><i class="fa fa-times"></i> <strong> Page Text</strong> length
-                        is
-                        <strong>0</strong> words. It
-                        Must be greater than <strong>200 words.
+                    <p id="text-report"><i class="fa fa-times"></i> <strong> Nội dung bài viết</strong> có độ dài
+                        là
+                        <strong>0</strong> từ. Nó phải lớn hơn
+                         <strong>200 từ.
                     </p>
 
 
                     <hr>
-                    <p id="focus-in-title"><i class="fa fa-times"></i> <strong> Focus Keyword</strong>
-                        is <strong>Missing</strong> in <strong>SEO Title</strong>.
+                    <p id="focus-in-title"><i class="fa fa-times"></i> <strong> Từ nổi bật </strong>
+                        bị <strong>thiếu</strong> trong <strong>tiêu đề</strong>.
                     </p>
 
                     <p id="focus-in-desc"><i class="fa fa-times"></i>
-                        <strong> Focus Keyword</strong>
-                        is <strong>Missing</strong> in <strong>SEO Description</strong>.
+                        <strong> Từ nổi bật</strong>
+                        bị <strong>thiếu</strong> trong <strong>mô tả</strong>.
                     </p>
 
-                    <p id="focus-in-keywords"><i class="fa fa-times"></i> <strong> Focus Keyword</strong>
-                        is <strong>Missing</strong> in <strong> Keywords</strong>.
-                    </p>
-
-
-                    <p id="focus-in-heading"><i class="fa fa-times"></i> <strong> Focus Keyword</strong>
-                        is <strong>Missing</strong> in <strong> Page Heading</strong>.
+                    <p id="focus-in-keywords"><i class="fa fa-times"></i> <strong> Từ nổi bật</strong>
+                        bị <strong>thiếu</strong> trong <strong> từ khóa</strong>.
                     </p>
 
 
-                    <p id="focus-in-text"><i class="fa fa-times"></i> <strong> Focus Keyword</strong>
-                        is <strong>Missing</strong> in <strong> Page content</strong>.
+                    <p id="focus-in-heading"><i class="fa fa-times"></i> <strong> Từ nổi bật</strong>
+                        bị <strong>thiếu</strong> trong <strong> tiêu đề trang</strong>.
+                    </p>
+
+
+                    <p id="focus-in-text"><i class="fa fa-times"></i> <strong> Từ nổi bật</strong>
+                        bị <strong>thiếu</strong> trong <strong> nội dung bài viết</strong>.
                     </p>
 
 
@@ -201,11 +199,11 @@
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                    aria-controls="home" aria-selected="true"><strong>Images Report</strong></a>
+                                    aria-controls="home" aria-selected="true"><strong>Hình ảnh</strong></a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                    aria-controls="profile" aria-selected="false"><strong>H Tag Report</strong></a>
+                                    aria-controls="profile" aria-selected="false"><strong>Thẻ H</strong></a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -250,7 +248,7 @@
             <br><br>
 
             <hr />
-            <h3 class="text-center">Snippet Preview</h3>
+            <h3 class="text-center">Xem trước đoạn trích</h3>
             <section class="row w-50">
 
                 <a href="##" class="text-decoration-none gresults" id="url-value">
