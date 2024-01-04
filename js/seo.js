@@ -61,13 +61,13 @@ const focusKeywordReport = (id, targetID, text) => {
         document.getElementsByClassName(id)[0].innerHTML.includes("highlight")
       ) {
         document.getElementById(targetID).innerHTML = `
-                <i class="fa fa-check"></i> <strong> Focus Keyword</strong>
+                <i class="fa fa-check"></i> <strong> Từ khóa tập trung</strong>
                             is in <strong>${text}</strong>.
                             `;
       } else {
         document.getElementById(targetID).innerHTML = ` 
             
-            <i class="fa fa-times"></i> <strong> Focus Keyword</strong>
+            <i class="fa fa-times"></i> <strong> Từ khóa tập trung</strong>
                             is <strong>Missing</strong> in <strong>${text}</strong>.
             
             `;
@@ -76,14 +76,14 @@ const focusKeywordReport = (id, targetID, text) => {
   } else {
     if (document.getElementById(id).innerHTML.includes("highlight")) {
       document.getElementById(targetID).innerHTML = `
-                <i class="fa fa-check"></i> <strong> Focus Keyword</strong>
+                <i class="fa fa-check"></i> <strong> Từ khóa tập trung</strong>
                             is in <strong>${text}</strong>.
                             `;
     } else {
       document.getElementById(targetID).innerHTML = ` 
             
-            <i class="fa fa-times"></i> <strong> Focus Keyword</strong>
-                            is <strong>Missing</strong> in <strong>${text}</strong>.
+            <i class="fa fa-times"></i> <strong> Từ khóa tập trung</strong>
+                            is <strong>Missing</strong> trong <strong>${text}</strong>.
             
             `;
     }
@@ -181,37 +181,37 @@ const checkTitleSeo = () => {
     color = "red";
     document.getElementById("title-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>SEO Title</strong> length is <strong>0</strong> characters. It Must be between <strong>30 to 60</strong>.
+ <strong>Tiêu đề SEO</strong> có độ dài là<strong>0</strong> ký tự. It Must be between <strong>30 to 60</strong>.
                 `;
   } else if (seoTitleLen > 0 && seoTitleLen <= 14) {
     color = "red";
     document.getElementById("title-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>SEO Title</strong> length is <strong>${seoTitleLen}</strong> characters. It Must be between <strong>30 to 60</strong>.
+ <strong>Tiêu đề SEO</strong> có độ dài là<strong>${seoTitleLen}</strong> ký tự. It Must be between <strong>30 to 60</strong>.
                 `;
   } else if (seoTitleLen >= 15 && seoTitleLen <= 29) {
     color = "orange";
     document.getElementById("title-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>SEO Title</strong> length is <strong>${seoTitleLen}</strong> characters. It Must be between <strong>30 to 60</strong>.
+ <strong>Tiêu đề SEO</strong> có độ dài là<strong>${seoTitleLen}</strong> ký tự. It Must be between <strong>30 to 60</strong>.
                 `;
   } else if (seoTitleLen >= 30 && seoTitleLen <= 60) {
     color = "green";
     document.getElementById("title-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>SEO Title</strong> length is <strong>${seoTitleLen}</strong> characters. It is in between <strong>30 to 60</strong>.
+ <strong>Tiêu đề SEO</strong> có độ dài là<strong>${seoTitleLen}</strong> ký tự. It is in between <strong>30 to 60</strong>.
                 `;
   } else if (seoTitleLen >= 61 && seoTitleLen <= 79) {
     color = "orange";
     document.getElementById("title-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>SEO Title</strong> length is <strong>${seoTitleLen}</strong> characters. It Must be between <strong>30 to 60</strong>.
+ <strong>Tiêu đề SEO</strong> có độ dài là<strong>${seoTitleLen}</strong> ký tự. It Must be between <strong>30 to 60</strong>.
                 `;
   } else if (seoTitleLen > 80) {
     color = "red";
     document.getElementById("title-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>SEO Title</strong> length is <strong>${seoTitleLen}</strong> characters. It Must be between <strong>30 to 60</strong>.
+ <strong>Tiêu đề SEO</strong> có độ dài là<strong>${seoTitleLen}</strong> ký tự. It Must be between <strong>30 to 60</strong>.
                 `;
   }
 
@@ -258,39 +258,39 @@ const checkHeadingSeo = () => {
     color = "red";
     document.getElementById("heading-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Heading</strong> length is <strong>${seoHeadingLen}</strong> characters. 
+ <strong>Page Heading</strong> có độ dài là<strong>${seoHeadingLen}</strong> ký tự. 
                 `;
   }
   if (seoHeadingLen > 0 && seoHeadingLen <= 14) {
     color = "green";
     document.getElementById("heading-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Page Heading</strong> length is <strong>${seoHeadingLen}</strong> characters.
+ <strong>Page Heading</strong> có độ dài là<strong>${seoHeadingLen}</strong> ký tự.
                 `;
   } else if (seoHeadingLen >= 15 && seoHeadingLen <= 29) {
     color = "green";
 
     document.getElementById("heading-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Page Heading</strong> length is <strong>${seoHeadingLen}</strong> characters.
+ <strong>Page Heading</strong> có độ dài là<strong>${seoHeadingLen}</strong> ký tự.
                 `;
   } else if (seoHeadingLen >= 30 && seoHeadingLen <= 60) {
     color = "green";
     document.getElementById("heading-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Page Heading</strong> length is <strong>${seoHeadingLen}</strong> characters.
+ <strong>Page Heading</strong> có độ dài là<strong>${seoHeadingLen}</strong> ký tự.
                 `;
   } else if (seoHeadingLen >= 61 && seoHeadingLen <= 79) {
     color = "green";
     document.getElementById("heading-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Page Heading</strong> length is <strong>${seoHeadingLen}</strong> characters.
+ <strong>Page Heading</strong> có độ dài là<strong>${seoHeadingLen}</strong> ký tự.
                 `;
   } else if (seoHeadingLen > 80) {
     color = "green";
     document.getElementById("heading-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Page Heading</strong> length is <strong>${seoHeadingLen}</strong> characters. 
+ <strong>Page Heading</strong> có độ dài là<strong>${seoHeadingLen}</strong> ký tự. 
                 `;
   }
 
@@ -334,39 +334,39 @@ const checkDescriptionSeo = () => {
     color = "red";
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>SEO Description</strong> length is <strong>${seoDescptionLen}</strong> characters. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
                 `;
   } else if (seoDescptionLen > 0 && seoDescptionLen <= 39) {
     color = "red";
 
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>SEO Description</strong> length is <strong>${seoDescptionLen}</strong> characters. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
                 `;
   } else if (seoDescptionLen >= 40 && seoDescptionLen <= 99) {
     color = "orange";
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>SEO Description</strong> length is <strong>${seoDescptionLen}</strong> characters. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
                 `;
   } else if (seoDescptionLen >= 100 && seoDescptionLen <= 156) {
     color = "green";
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>SEO Description</strong> length is <strong>${seoDescptionLen}</strong> characters. It is in between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It is in between <strong>100 to 156</strong>.
                 `;
   } else if (seoDescptionLen >= 157 && seoDescptionLen <= 179) {
     color = "orange";
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>SEO Description</strong> length is <strong>${seoDescptionLen}</strong> characters. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
                 `;
   } else if (seoDescptionLen > 180) {
     color = "red";
 
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>SEO Description</strong> length is <strong>${seoDescptionLen}</strong> characters. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
                 `;
   }
 
@@ -424,33 +424,33 @@ const checkKeywordsSeo = () => {
 
     document.getElementById("keywords-report").innerHTML = `
                 <i class="fa fa-times"></i>
-                <strong> Meta Keywords</strong> are <strong>${keywordsArray.length}</strong>. There Must be <strong>5</strong> Keywords.
+                <strong> Số lương từ khóa Meta</strong> là <strong>${keywordsArray.length}</strong>. Phải có ít nhất <strong>5</strong> từ khóa.
                 `;
   } else if (keywordsArray.length == 1) {
     color = "red";
     document.getElementById("keywords-report").innerHTML = `
                 <i class="fa fa-times"></i>
-                <strong> Meta Keywords</strong> are <strong>${keywordsArray.length}</strong>. There Must be <strong>5</strong> Keywords.
+                <strong> Số lương từ khóa Meta</strong> là <strong>${keywordsArray.length}</strong>. Phải có ít nhất <strong>5</strong> từ khóa.
                 `;
   } else if (keywordsArray.length > 1 && keywordsArray.length <= 3) {
     color = "orange";
 
     document.getElementById("keywords-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
-                <strong> Meta Keywords</strong> are <strong>${keywordsArray.length}</strong>. There Must be <strong>5</strong> Keywords.
+                <strong> Số lương từ khóa Meta</strong> là <strong>${keywordsArray.length}</strong>. Phải có ít nhất <strong>5</strong> từ khóa.
                 `;
   } else if (keywordsArray.length > 3 && keywordsArray.length <= 6) {
     color = "green";
     document.getElementById("keywords-report").innerHTML = `
                 <i class="fa fa-check"></i>
-                <strong> Meta Keywords</strong> are <strong>${keywordsArray.length}</strong>. It is <strong>Good</strong> for SEO.
+                <strong> Số lương từ khóa Meta</strong> là <strong>${keywordsArray.length}</strong>. It is <strong>Good</strong> for SEO.
                 `;
   } else if (keywordsArray.length > 6 && keywordsArray.length <= 10) {
     color = "orange";
 
     document.getElementById("keywords-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
-                <strong> Meta Keywords</strong> are <strong>${keywordsArray.length}</strong>. There Must be <strong>5</strong> Keywords.
+                <strong> Số lương từ khóa Meta</strong> làstrong>${keywordsArray.length}</strong>. Phải có ít nhất <strong>5</strong> từ khóa.
                 `;
 
     if (keywordsArray.length > 8 && keywordsArray.length < 11) {
@@ -460,7 +460,7 @@ const checkKeywordsSeo = () => {
 
     document.getElementById("keywords-report").innerHTML = `
                 <i class="fa fa-times"></i>
-                <strong> Meta Keywords</strong> are <strong>${keywordsArray.length}</strong>. There Must be <strong>5</strong> Keywords.
+                <strong> Số lương từ khóa Meta</strong> are <strong>${keywordsArray.length}</strong>. Phải có ít nhất <strong>5</strong> từ khóa.
                 `;
   }
 
@@ -501,19 +501,19 @@ const focusKeywordLengthCheck = () => {
   if (keywordsArray <= 0) {
     document.getElementById("focus-keyword-report").innerHTML = `
                 <i class="fa fa-times"></i>
-                    <strong>Focus Keyword</strong> is <strong>Missing</strong>.There Must be <strong>1</strong> Focus Keyword.
+                    <strong>Từ khóa tập trung</strong> is <strong>Missing</strong>.Phải có ít nhất <strong>1</strong> từ khóa tập trung.
                 `;
     focusKeywordSeoScore = 0;
   } else if (keywordsArray.length == 1) {
     document.getElementById("focus-keyword-report").innerHTML = `
                 <i class="fa fa-check"></i>
-                 There is <strong>1</strong> Focus Keyword.It is good for <strong>SEO</strong>.
+                 There is <strong>1</strong> Từ khóa tập trung.It is good for <strong>SEO</strong>.
                 `;
     focusKeywordSeoScore = 10;
   } else if (keywordsArray.length > 1) {
     document.getElementById("focus-keyword-report").innerHTML = `
                 <i class="fa fa-times"></i>
-                 There are <strong>${keywordsArray.length}</strong> Focus Keywords .It Must be <strong>1</strong> Keyword.
+                 There are <strong>${keywordsArray.length}</strong> Từ khóa tập trungs .It Must be <strong>1</strong> từ khóa.
                 `;
 
     focusKeywordSeoScore = 0;
@@ -666,9 +666,9 @@ function DrawSeoGraph() {
   } else {
   }
 
-  focusKeywordReport("meta-title2", "focus-in-title", "SEO Title");
-  focusKeywordReport("meta-description2", "focus-in-desc", "SEO Description");
-  focusKeywordReport("metakeywords2", "focus-in-keywords", "Meta Keywords");
+  focusKeywordReport("meta-title2", "focus-in-title", "Tiêu đề");
+  focusKeywordReport("meta-description2", "focus-in-desc", "Đoạn mô tả");
+  focusKeywordReport("metakeywords2", "focus-in-keywords", "Số lương từ khóa Meta");
   focusKeywordReport("seo-heading2", "focus-in-heading", "Page Heading");
   focusKeywordReport("richText-editor", "focus-in-text", "Page Text");
 }
@@ -704,7 +704,7 @@ const convertHtmlToText = (impureString) => {
   //-- get rid of more than 2 spaces:
   impureString = impureString.replace(/ +(?= )/g, "");
 
-  //-- get rid of html-encoded characters:
+  //-- get rid of html-encoded ký tự:
   impureString = impureString.replace(/&nbsp;/gi, " ");
   impureString = impureString.replace(/&amp;/gi, "&");
   impureString = impureString.replace(/&quot;/gi, '"');
@@ -741,39 +741,39 @@ const checkTextSeoDetails = () => {
     color = "red";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
                 `;
   }
   if (seoTextLen > 0 && seoTextLen <= 156) {
     color = "red";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
                 `;
   } else if (seoTextLen >= 150 && seoTextLen <= 199) {
     color = "orange";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
                 `;
   } else if (seoTextLen >= 200 && seoTextLen <= 300) {
     color = "green";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It is good for <strong>SEO</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It is good for <strong>SEO</strong> words.
                 `;
   } else if (seoTextLen >= 301 && seoTextLen <= 399) {
     color = "orange";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It Must be between <strong>200 to 300</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be between <strong>200 to 300</strong> words.
                 `;
   } else if (seoTextLen > 399) {
     color = "red";
 
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It Must be between <strong>200 to 300</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be between <strong>200 to 300</strong> words.
                 `;
   }
 
@@ -837,26 +837,26 @@ $(document).ready(function () {
       color = "red";
       document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It Must be greater than <strong>200</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200</strong> words.
                 `;
     }
     if (seoTextLen > 0 && seoTextLen <= 156) {
       color = "red";
       document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It Must be greater than <strong>200</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200</strong> words.
                 `;
     } else if (seoTextLen >= 150 && seoTextLen <= 199) {
       color = "orange";
       document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It Must be greater than <strong>200</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200</strong> words.
                 `;
     } else if (seoTextLen >= 200 && seoTextLen >= 300) {
       color = "green";
       document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Page Text</strong> length is <strong>${seoTextLen}</strong> words. It is good for <strong>SEO</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It is good for <strong>SEO</strong> words.
                 `;
     }
     document.getElementById("text-seo-bar").style.backgroundColor = color;
