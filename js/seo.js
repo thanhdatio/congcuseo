@@ -741,39 +741,39 @@ const checkTextSeoDetails = () => {
     color = "red";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> từ. Cần nhiều hơn <strong>200 </strong> từ.
                 `;
   }
   if (seoTextLen > 0 && seoTextLen <= 156) {
     color = "red";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> từ. Cần nhiều hơn <strong>200 </strong> từ.
                 `;
   } else if (seoTextLen >= 150 && seoTextLen <= 199) {
     color = "orange";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be greater than <strong>200 </strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> từ. Cần nhiều hơn <strong>200 </strong> từ.
                 `;
   } else if (seoTextLen >= 200 && seoTextLen <= 300) {
     color = "green";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It is good for <strong>SEO</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> từ. Nó tốt cho <strong>SEO</strong> words.
                 `;
   } else if (seoTextLen >= 301 && seoTextLen <= 399) {
     color = "orange";
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be between <strong>200 to 300</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> từ. Cần khoảng <strong>200 đến 300</strong> từ.
                 `;
   } else if (seoTextLen > 399) {
     color = "red";
 
     document.getElementById("text-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> words. It Must be between <strong>200 to 300</strong> words.
+ <strong>Page Text</strong> có độ dài là<strong>${seoTextLen}</strong> từ. Cần khoảng <strong>200 đến 300</strong> từ.
                 `;
   }
 
