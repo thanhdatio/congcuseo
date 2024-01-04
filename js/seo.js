@@ -334,39 +334,39 @@ const checkDescriptionSeo = () => {
     color = "red";
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là <strong>${seoDescptionLen}</strong> ký tự. Cần nằm trong khoảng từ <strong>100 tới 156</strong> từ.
                 `;
   } else if (seoDescptionLen > 0 && seoDescptionLen <= 39) {
     color = "red";
 
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là <strong>${seoDescptionLen}</strong> ký tự. Cần nằm trong khoảng từ <strong>100 tới 156</strong> từ.
                 `;
   } else if (seoDescptionLen >= 40 && seoDescptionLen <= 99) {
     color = "orange";
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là <strong>${seoDescptionLen}</strong> ký tự. Cần nằm trong khoảng từ <strong>100 tới 156</strong> từ.
                 `;
   } else if (seoDescptionLen >= 100 && seoDescptionLen <= 156) {
     color = "green";
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-check"></i>
- <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It is in between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là <strong>${seoDescptionLen}</strong> ký tự. Cần nằm trong khoảng từ <strong>100 tới 156</strong> từ.
                 `;
   } else if (seoDescptionLen >= 157 && seoDescptionLen <= 179) {
     color = "orange";
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-exclamation-triangle"></i>
- <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. Cần nằm trong khoảng từ <strong>100 tới 156</strong> từ.
                 `;
   } else if (seoDescptionLen > 180) {
     color = "red";
 
     document.getElementById("desc-report").innerHTML = `
                 <i class="fa fa-times"></i>
- <strong>Đoạn mô tả</strong> có độ dài là<strong>${seoDescptionLen}</strong> ký tự. It Must be between <strong>100 to 156</strong>.
+ <strong>Đoạn mô tả</strong> có độ dài là <strong>${seoDescptionLen}</strong> ký tự. Cần nằm trong khoảng từ <strong>100 tới 156</strong> từ.
                 `;
   }
 
@@ -501,19 +501,19 @@ const focusKeywordLengthCheck = () => {
   if (keywordsArray <= 0) {
     document.getElementById("focus-keyword-report").innerHTML = `
                 <i class="fa fa-times"></i>
-                    <strong>Từ khóa tập trung</strong> is <strong>Missing</strong>.Phải có ít nhất <strong>1</strong> từ khóa tập trung.
+                    <strong>Từ khóa tập trung </strong> bị <strong> thiếu</strong>. Phải có ít nhất <strong>1</strong> từ khóa tập trung.
                 `;
     focusKeywordSeoScore = 0;
   } else if (keywordsArray.length == 1) {
     document.getElementById("focus-keyword-report").innerHTML = `
                 <i class="fa fa-check"></i>
-                 There is <strong>1</strong> Từ khóa tập trung.It is good for <strong>SEO</strong>.
+                 Có <strong>1</strong> Từ khóa tập trung. Tốt cho <strong>SEO</strong>.
                 `;
     focusKeywordSeoScore = 10;
   } else if (keywordsArray.length > 1) {
     document.getElementById("focus-keyword-report").innerHTML = `
                 <i class="fa fa-times"></i>
-                 There are <strong>${keywordsArray.length}</strong> Từ khóa tập trungs .It Must be <strong>1</strong> từ khóa.
+                 Có <strong>${keywordsArray.length}</strong> Từ khóa tập trung. cần ít nhất <strong>1</strong> từ khóa.
                 `;
 
     focusKeywordSeoScore = 0;
