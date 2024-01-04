@@ -668,9 +668,9 @@ function DrawSeoGraph() {
 
   focusKeywordReport("meta-title2", "focus-in-title", "Tiêu đề");
   focusKeywordReport("meta-description2", "focus-in-desc", "Đoạn mô tả");
-  focusKeywordReport("metakeywords2", "focus-in-keywords", "Số lương từ khóa Meta");
-  focusKeywordReport("seo-heading2", "focus-in-heading", "Page Heading");
-  focusKeywordReport("richText-editor", "focus-in-text", "Page Text");
+  focusKeywordReport("metakeywords2", "focus-in-keywords", "Từ khóa Meta");
+  focusKeywordReport("seo-heading2", "focus-in-heading", "đầu bài viết");
+  focusKeywordReport("richText-editor", "focus-in-text", "nội dung bài viết");
 }
 
 const convertHtmlToText = (impureString) => {
